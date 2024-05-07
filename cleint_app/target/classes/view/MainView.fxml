@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep12.cleint.controllers.MainViewController">
+   <children>
+      <TextArea fx:id="txtDisplay" editable="false" layoutX="20.0" layoutY="43.0" prefHeight="91.0" prefWidth="82.0" visible="false" />
+      <Label alignment="CENTER" layoutX="22.0" layoutY="20.0" prefHeight="16.0" prefWidth="554.0" text="DEP 12 GENERAL CHAT APP">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMessage" layoutX="22.0" layoutY="350.0" prefHeight="24.0" prefWidth="476.0" />
+      <Button layoutX="531.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnSendOnAction" prefHeight="24.0" prefWidth="57.0" text="SEND" />
+      <Button layoutX="498.0" layoutY="350.0" mnemonicParsing="false" onAction="#btnAttachedOnAction" prefHeight="24.0" prefWidth="21.0" text="+" />
+      <ScrollPane layoutX="22.0" layoutY="41.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="35.0">
+         <content>
+            <VBox fx:id="vBox1" prefHeight="286.0" prefWidth="543.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
